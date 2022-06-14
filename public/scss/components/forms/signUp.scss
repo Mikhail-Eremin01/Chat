@@ -1,0 +1,41 @@
+.form-signup{
+    width: 100%;
+    height: 375px;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 55px 37px 0;
+    transition: all 0.5s ease;
+    position: relative;
+    top: -375px;
+    left: 400px;
+    opacity: 0;
+    & input{
+        color: #ffffff;
+        font-size: 13px;
+    }
+    .container{
+        padding-bottom: 25px;
+        label{
+            @extend %label;
+        }
+        .container__input{
+            @extend %containerInput;
+        }
+        .container__user-exist{
+            color: red;
+            padding: 10px 15px 0;
+        }
+    }
+    .btn-send{
+        @extend %btnSend;
+    }
+    
+    .form-signup__btn:hover{
+        background-color: #0F4FE6;
+        transition: background-color 0.3s;
+    }
+}
+.form-signup-left{
+    transform: translateX(-399px);
+    opacity: 1;
+}

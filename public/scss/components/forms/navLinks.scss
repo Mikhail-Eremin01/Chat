@@ -1,0 +1,24 @@
+
+.nav-links{
+    padding: 0 40px;
+    li{
+        padding-left: 10px;
+        font-size: 18px;
+        display: inline;
+        text-transform: uppercase;
+        padding-right: 10px;
+    }
+    .nav-links__sign-active{
+        color: #ffffff;
+        border-bottom: solid 2px #1059FF;
+        padding-bottom: 10px;
+    }
+    .nav-links__sign-inactive{
+        color: rgba(255,255,255,0.3);
+    }
+    .nav-links__sign-active, .nav-links__sign-inactive{
+        cursor: pointer;
+        transition: all 0.25s ease;
+        text-decoration: none;
+    }
+}
